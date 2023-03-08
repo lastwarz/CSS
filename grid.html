@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>grid</title>
+    <style>
+        #grid {
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 150px 1fr; /* nav..는 150px,
+                art..은 나머지를 분할해서 사용 */
+        }
+        div {
+            border:5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div>NAVIGATION</div> <!-- (div) block element-->
+        <div>ARTICLE</div> 
+                          <!-- (span) inline element-->
+</body>
+</html>
