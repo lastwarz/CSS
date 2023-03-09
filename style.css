@@ -1,0 +1,44 @@
+a {
+    color:hotpink;
+    text-decoration: none;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    margin: 0;
+    padding: 15px;
+}
+li {
+    font-size: 20px;
+}
+ol {
+    border-right: 3px solid gray;
+    width: 150px;
+    margin: 0;
+    padding: 20px;
+}
+body {
+    margin: 0;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+#grid ol {
+    padding-left: 33px;
+}
+#article {
+    padding: 25px;
+}
+@media(max-width: 800px) { /* 800px 보다 작다면 */
+    #grid {
+    display: block;
+    }
+    ol {
+    border-right: none;
+    }
+    h1 {
+        border-bottom: none;
+    }
+}
